@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <title>TfL Cycle Hire API | BikeStats</title>
+      
+    </head>
+    <body>
+        
+                    <h1>BikeStats - TFL Cycle Hire API</h1>
+                    <h2>How to call the API</h2>
+                    <p>
+                        Currently there are two methods to call the servce -
+                    </p>
+                    <ul class="list">
+                        <li>
+                            <p>
+                                To get the data for all bike docking stations.
+                            </p>
+                            <pre>http://api.bike-stats.co.uk/service/rest/bikestats?format=[xml | json | csv | yaml]</pre>
+                        </li>
+                        <li>
+                            <p>
+                                To get the data for a specific bike docking station.
+                            </p>
+                            <pre>http://api.bike-stats.co.uk/service/rest/bikestat/dockID?format=[xml | json]</pre>
+                            <p>
+                                Note : Replace the [dockID] with the docking station id.
+                            </p>
+                        </li>
+                    </ul>
+                    <h3>Output Format</h3>
+                    <ul class="list">
+                        <li>
+                            <p>
+                                <strong>xml</strong>
+                                (default) - Extensible Markup Language.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>json</strong>
+                                - A text-based representation of a 
+                                Javascript object. It can be converted back into an object using the <a href="http://www.devguru.com/Technologies/ecmascript/quickref/eval.html">eval()</a>
+                                function in Javascript, and many other languages have code libraries
+                                available.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>csv</strong>
+                                - Comma, separated, values.                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>yaml</strong>
+                                - YAML is a human friendly data 
+                                serialization standard for all programming languages with lots of <a href="http://www.yaml.org/">code libraries</a>
+                                available.
+                            </p>
+                        </li>
+                    </ul>
+                    
+
+ </body>
+</html>
