@@ -75,9 +75,9 @@ public class DockFeedServlet extends HttpServlet {
                 station.setLongitude((Double.parseDouble(regexMatcher.group(5))));
                 station.setNbBikeAvailable(Integer.parseInt(regexMatcher.group(6)));
                 station.setNbEmptyDocks(Integer.parseInt(regexMatcher.group(7)));
-                station.setInstalled(Boolean.getBoolean(regexMatcher.group(8)));
-                station.setLocked(Boolean.getBoolean(regexMatcher.group(9)));
-                station.setTemporary(Boolean.getBoolean(regexMatcher.group(10)));
+                station.setInstalled(Boolean.valueOf(regexMatcher.group(8)));
+                station.setLocked(Boolean.valueOf(regexMatcher.group(9)));
+                station.setTemporary(Boolean.valueOf(regexMatcher.group(10)));
                 mp.put(id, station);
             }
         } catch (PatternSyntaxException ex) {
